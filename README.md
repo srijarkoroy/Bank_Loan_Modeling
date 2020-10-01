@@ -37,3 +37,6 @@ The bank has a growing customer base. The bank wants to increase borrowers (asse
 6. Using Logistic Regression model to predict the likelihood of a customer buying personal loans.
 7. Displaying all the metrics related for evaluating the model performance
 8. Building various other classification algorithms and comparing their performance
+- Support Vector Machine
+- K-Nearest Neighbors
+- Naive Bayes Classifier
