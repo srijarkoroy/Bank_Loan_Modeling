@@ -18,7 +18,9 @@
 
 # Demonstration
 <br>
+
 Here's a Demo on how the Web App works 
+<br>
 <br>
 
 ![](demo.gif)
