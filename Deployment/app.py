@@ -57,24 +57,27 @@ html_temp_2 = '''
 st.markdown(html_temp_2, unsafe_allow_html=True)
 
 select = st.selectbox("Please Select your model from the following options",("Please Select","Logistic Regression","Support Vector Machine","KNeighbours Classifier","Naive-Bayes Classifier"))
-if select == "Logistic Regression":
-    model = LogisticRegression()
-    model.fit(X_train,y_train)
+try:
+    if select == "Logistic Regression":
+        model = LogisticRegression()
+        model.fit(X_train,y_train)
 
-if select == "Support Vector Machine":
-    model = SVC(kernel = 'linear')
-    model.fit(X_train,y_train)
+    if select == "Support Vector Machine":
+        model = SVC(kernel = 'linear')
+        model.fit(X_train,y_train)
 
-if select == "KNeighbours Classifier":
-    model = KNeighborsClassifier(n_neighbors = 7)
-    model.fit(X_train,y_train)
+    if select == "KNeighbours Classifier":
+        model = KNeighborsClassifier(n_neighbors = 7)
+        model.fit(X_train,y_train)
 
-if select == "Naive-Bayes Classifier":
-    model = GaussianNB()
-    model.fit(X_train,y_train)
+    if select == "Naive-Bayes Classifier":
+        model = GaussianNB()
+        model.fit(X_train,y_train)
 
-if st.button("Predict"):
-    results(model)
-
+    if st.button("Predict"):
+        results(model)
+        
+expect:
+    pass
 
     
